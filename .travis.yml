@@ -33,54 +33,10 @@ before_install:
 - sudo /etc/init.d/postgresql stop
 - sudo free -m -t
 
+matrix:
+    fast_finish: true
+
 env:
  - this_sample_break=1
  - this_sample_break=2
  - this_sample_break=3
- - this_sample_break=4
- - this_sample_break=5
- - this_sample_break=6
- - this_sample_break=7
- - this_sample_break=8
- - this_sample_break=9
- - this_sample_break=10
- - this_sample_break=11
- - this_sample_break=12
- - this_sample_break=13
- - this_sample_break=14
- - this_sample_break=15
- - this_sample_break=16
- - this_sample_break=17
- - this_sample_break=18
- - this_sample_break=19
- - this_sample_break=20
- - this_sample_break=21
- - this_sample_break=22
- - this_sample_break=23
- - this_sample_break=24
- - this_sample_break=25
- - this_sample_break=26
- - this_sample_break=27
- - this_sample_break=28
- - this_sample_break=29
- - this_sample_break=30
- - this_sample_break=31
- - this_sample_break=32
- - this_sample_break=33
- - this_sample_break=34
- - this_sample_break=35
- - this_sample_break=36
- - this_sample_break=37
- - this_sample_break=38
- - this_sample_break=39
- - this_sample_break=40
- - this_sample_break=41
- - this_sample_break=42
- - this_sample_break=43
- - this_sample_break=44
- - this_sample_break=45
- - this_sample_break=46
- - this_sample_break=47
- - this_sample_break=48
- - this_sample_break=49
- - this_sample_break=50
