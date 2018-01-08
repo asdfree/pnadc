@@ -1,7 +1,5 @@
 if ( .Platform$OS.type == 'windows' ) memory.limit( 256000 )
 
-library(lodown)
-lodown( "pnadc" , output_dir = file.path( getwd() ) )
 this_sample_break <- Sys.getenv( "this_sample_break" )
 pnadc_cat <- get_catalog( "pnadc" , output_dir = file.path( getwd() ) )
 record_categories <- ceiling( seq( nrow( pnadc_cat ) ) / ceiling( nrow( pnadc_cat ) / 3 ) )
@@ -17,7 +15,7 @@ pnadc_cat <-
 # 2015 3rd quarter only
 pnadc_cat <- subset( pnadc_cat , year == 2015 & quarter == '03' )
 # download the microdata to your local computer
-lodown( "pnadc" , pnadc_cat )
+
 
 library(survey)
 
