@@ -7,17 +7,17 @@ this_sample_break <- Sys.getenv( "this_sample_break" )
 pnadc_cat <- get_catalog( "pnadc" , output_dir = file.path( getwd() ) )
 record_categories <- ceiling( seq( nrow( pnadc_cat ) ) / ceiling( nrow( pnadc_cat ) / 23 ) )
 pnadc_cat <- pnadc_cat[ record_categories == this_sample_break , ]
-lodown( "pnadc" , pnadc_cat )
+pnadc_cat <- lodown( "pnadc" , pnadc_cat )
 if( any( pnadc_cat$year == 2015 & pnadc_cat$quarter == '03' ) ){
-library(lodown)
-# examine all available PNADC microdata files
-pnadc_cat <-
-	get_catalog( "pnadc" ,
-		output_dir = file.path( getwd() ) )
 
-# 2015 3rd quarter only
-pnadc_cat <- subset( pnadc_cat , year == 2015 & quarter == '03' )
-# download the microdata to your local computer
+
+
+
+
+
+
+
+
 
 
 library(survey)
