@@ -44,18 +44,5 @@ env:
  - this_sample_break=8
  - this_sample_break=9
  - this_sample_break=10
- - this_sample_break=11
- - this_sample_break=12
- - this_sample_break=13
- - this_sample_break=14
- - this_sample_break=15
- - this_sample_break=16
- - this_sample_break=17
- - this_sample_break=18
- - this_sample_break=19
- - this_sample_break=20
- - this_sample_break=21
- - this_sample_break=22
- - this_sample_break=23
 matrix:
     fast_finish: true
