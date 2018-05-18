@@ -5,7 +5,7 @@ options("lodown.cachaca.savecache"=FALSE)
 library(lodown)
 this_sample_break <- Sys.getenv( "this_sample_break" )
 pnadc_cat <- get_catalog( "pnadc" , output_dir = file.path( getwd() ) )
-record_categories <- ceiling( seq( nrow( pnadc_cat ) ) / ceiling( nrow( pnadc_cat ) / 8 ) )
+record_categories <- ceiling( seq( nrow( pnadc_cat ) ) / ceiling( nrow( pnadc_cat ) / 7 ) )
 pnadc_cat <- pnadc_cat[ record_categories == this_sample_break , ]
 pnadc_cat <- lodown( "pnadc" , pnadc_cat )
 if( any( pnadc_cat$year == 2015 & pnadc_cat$quarter == '03' ) ){
