@@ -4,7 +4,7 @@ Title: pnadc
 Version: 0.1.0
 Author: Anthony Joseph Damico
 Maintainer: Anthony Joseph Damico <ajdamico@gmail.com>
-Description: A continuous integration package, tested on ajdamico/asdfree commit 92048e537fe8c95c8940fa0b6efcb3b7732a565c ajdamico/lodown commit 801e3fdc308d6adcde3a4a8a73fe5bc1bf241e5c
+Description: A continuous integration package, tested on ajdamico/asdfree commit 92048e537fe8c95c8940fa0b6efcb3b7732a565c ajdamico/lodown commit 5e39a5a76ffdb6636b75389308868251f5e3df57
 License: GPL-3
 Imports: survey, convey, lodown
 Encoding: UTF-8
