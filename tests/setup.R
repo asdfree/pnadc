@@ -139,7 +139,7 @@ svyratio(
 	pnadc_design ,
 	na.rm = TRUE
 )
-sub_pnadc_design <- subset( pnadc_design , desocup30 == 1 )
+sub_pnadc_design <- subset( pnadc_design , ocup_c == 1 )
 svymean( ~ vd4020n , sub_pnadc_design , na.rm = TRUE )
 this_result <- svymean( ~ vd4020n , pnadc_design , na.rm = TRUE )
 
